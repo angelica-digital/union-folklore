@@ -75,13 +75,8 @@
   .nav-container{
     max-width:1280px;margin:0 auto;
     padding:14px 24px;
-    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    display:flex;align-items:center;justify-content:flex-end;gap:24px;
   }
-  .brand-logo{
-    height:55px;width:auto;object-fit:contain;
-    transition:all .3s ease;
-  }
-  .brand-logo:hover{transform:scale(1.04)}
   .nav-menu{display:flex;align-items:center;gap:32px;list-style:none}
   .nav-menu a{
     color:var(--text-white);font-size:14px;font-weight:500;
@@ -628,18 +623,20 @@
     .agency-banner{font-size:11px;padding:8px 12px}
     .agency-banner br{display:none}
     .footer-bottom{flex-direction:column;text-align:center}
-    .brand-logo{height:42px}
   }
 </style>
 </head>
 <body>
 
+<!-- ===== AGENCY BANNER ===== -->
+<div class="agency-banner">
+  💡 <strong>Demo desarrollada por Angélica Digital.</strong> ¿Quieres un portafolio web de alta conversión para tu grupo o empresa?
+  <a href="https://wa.me/5511953285680" target="_blank" rel="noopener">Escríbenos por WhatsApp →</a>
+</div>
+
 <!-- ===== HEADER ===== -->
 <header class="header" id="header">
   <div class="nav-container">
-    <a href="#inicio">
-      <img src="logo.png" alt="Unión Folklore" class="brand-logo">
-    </a>
     <ul class="nav-menu" id="navMenu">
       <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
       <li><a href="#servicios" onclick="closeMenu()">Presentaciones</a></li>
@@ -665,6 +662,9 @@
   </div>
   <div class="hero-content">
     <div class="hero-text">
+      <div class="hero-brand-logo" style="margin-bottom: 20px;">
+        <img src="logounionfolklore.png" alt="Unión Folklore Logo" style="width: 260px; height: auto;">
+      </div>
       <div class="hero-badges">
         <span class="hero-badge"> Danza Tradicional y de proyección</span>
       </div>
@@ -677,7 +677,7 @@
     </div>
     <div class="hero-visual">
       <div class="hero-visual-badge">★ SHOW EN VIVO</div>
-      <img src="https://images.unsplash.com/photo-1535525153412-5a092d46317d?w=900&q=80" alt="Danza folclórica colombiana - Unión Folklore">
+      <img src="hero.png" alt="Danza folclórica colombiana - Unión Folklore">
       <div class="hero-visual-stat">
         <div class="number">+8</div>
         <div class="label">Años de Tradición</div>
@@ -872,7 +872,7 @@
             <div class="icon">🕐</div>
             <div class="text">
               <strong>Horarios de Ensayo</strong>
-              <span>Sábados de 2:00 PM a 5:00 PM</span>
+              <span>Lunes, miércoles y viernes de 7:30 PM a 9:30 PM</span>
             </div>
           </li>
           <li>
